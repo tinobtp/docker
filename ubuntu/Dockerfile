@@ -8,4 +8,5 @@ LABEL maintainer "Bao Pham<tinobtp@gmail.com>"
 RUN apt-get update && \
     apt-get install -y software-properties-common --no-install-recommends && \
 	apt-get update && \
-	apt-get install -y git vim net-tools iftop
+	apt-get install -y git vim net-tools iftop && \
+    rm -rf /var/lib/apt/lists/*
